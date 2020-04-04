@@ -9,10 +9,36 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1KWf89PT1FRXQXHQwREZRpLF5Ku_MQffd'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1NBnGdinyPaAPwjb0yYysy4wi9FEim9vL'
 export_file_name = 'export.pkl'
 
-classes = ['Black Footed Grey Langur', 'Rhesus Macaque', 'Snake']
+classes = ['Asian Koel',
+ 'Black Drongo',
+ 'Black Kite',
+ 'Brahminy Stirling',
+ 'Common Myna',
+ 'Common Tailorbird',
+ 'Coppersmith Barbet',
+ 'Great Indian Bustard',
+ 'Greater Coucal',
+ 'Green Bee-eater',
+ 'House Crow',
+ 'Indian Cormorant',
+ 'Indian Grey Hornbill',
+ 'Indian Parakeet',
+ 'Indian Peafowl',
+ 'Indian Pond Heron',
+ 'Indian Robin',
+ 'Indian Roller',
+ 'Indian Vulture',
+ 'Jungle Babbler',
+ 'Painted Stork',
+ 'Purple-rumped sunbird',
+ 'Red Vented Bulbul',
+ 'Red-Wattled Lapwing',
+ 'Rufous Treepie',
+ 'Spotted Owlet',
+ 'White Throated Kingfisher']
 path = Path(__file__).parent
 
 app = Starlette()
